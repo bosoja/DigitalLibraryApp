@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Library</title>
+</head>
+<body>
+    <h1>Welcome to the Digital Library</h1>
+    <ul>
+        {% for book in books %}
+            <li>{{ book.title }} by {{ book.author }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
